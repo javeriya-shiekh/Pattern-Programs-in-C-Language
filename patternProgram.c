@@ -45,3 +45,51 @@ int main()
 // * * * 
 // * * * * 
 // * * * * *
+
+// Program 03
+#include <stdio.h>
+
+int main()
+{
+    int i, j;
+    
+    // Outer loop for rows: 1 to 4
+    for(i = 1; i <= 4; i++)
+    {
+        // Inner loop: print numbers from 1 to i
+        for( j = 1; j <=i; j++)
+        {
+            printf("%d ", j); // Print number with space
+        }
+        printf("\n"); // New line after each row
+    }
+    
+    return 0;
+}
+// Output:
+// 1 
+// 1 2 
+// 1 2 3 
+// 1 2 3 4 
+
+// Program 04
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    for(i = 1; i <= 5; i++) {
+        for(j = 1; j <= i; j++) {
+            printf("%d", i);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+//Output:
+// 1
+// 22
+// 333
+// 4444
+// 55555
